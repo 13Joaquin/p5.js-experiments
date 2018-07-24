@@ -1,0 +1,128 @@
+@charset "utf-8";
+body {
+	background-image: url(../stata.jpg);
+	background-size: cover;
+	color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	margin: 0;
+	height: 100%;
+	background-color: rgba(91,133,191,1.00);
+}
+h1 {
+	font-size: 64px;
+	text-align: center;
+	color: #FFFFFF;
+	margin-top: 50px;
+	margin-right: 50px;
+	margin-left: 50px;
+	margin-bottom: 50px;
+}
+.navbar-brand.umbra {
+	color: #FFFFFF;
+}
+.navbar.bg-grad {
+	background-image: -webkit-linear-gradient(256deg, rgba(255,255,255,1.00) 25.39%, rgba(255,255,255,0.00) 60.10%);
+	background-image: -moz-linear-gradient(256deg, rgba(255,255,255,1.00) 25.39%, rgba(255,255,255,0.00) 60.10%);
+	background-image: -o-linear-gradient(256deg, rgba(255,255,255,1.00) 25.39%, rgba(255,255,255,0.00) 60.10%);
+	background-image: linear-gradient(194deg, rgba(255,255,255,1.00) 25.39%, rgba(255,255,255,0.00) 60.10%);
+	background-color: rgba(0,0,0,0.00);
+}
+nav {
+	background-color: #FFFFFF;
+}
+.navlist {
+	overflow: hidden;
+	text-align: center;
+	list-style-type: none;
+}
+.navListitem {
+	float: left;
+	list-style-type: none;
+}
+.navListitem a {
+	display: block;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding-top: 9px;
+	padding-right: 9px;
+	padding-left: 9px;
+	padding-bottom: 9px;
+}
+.navListitem a:hover {
+	color: #81A5D5;
+	text-decoration: none;
+}
+.aestShadow {
+	text-shadow: 0.1em 0.1em rgba(63,51,48,0.89);
+	color: #FFFFFF
+}
+h2 {
+	text-align: center;
+}
+p a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+p a:hover {
+	color: #8AACDC;
+	text-decoration: none;
+}
+.umbra {
+	font-family: 'Montserrat', sans-serif;
+}
+p {
+	margin-top: 18px;
+	margin-right: 18px;
+	margin-bottom: 18px;
+	margin-left: 18px;
+	padding-top: 14px;
+	padding-right: 14px;
+	padding-bottom: 14px;
+	padding-left: 14px;
+	border: thin solid rgba(251,251,251,0.30);
+	border-radius: 35px;
+}
+footer {
+	text-align: center;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 23px;
+	width: 100%;
+	padding-right: 16px;
+	padding-left: 16px;
+	background-image: -webkit-linear-gradient(83deg, rgba(255,255,255,1.00) 0%, rgba(255,255,255,0.00) 45.08%);
+	background-image: -moz-linear-gradient(83deg, rgba(255,255,255,1.00) 0%, rgba(255,255,255,0.00) 45.08%);
+	background-image: -o-linear-gradient(83deg, rgba(255,255,255,1.00) 0%, rgba(255,255,255,0.00) 45.08%);
+	background-image: linear-gradient(7deg, rgba(255,255,255,1.00) 0%, rgba(255,255,255,0.00) 45.08%);
+}
+.acroText {
+	display: none;
+}
+.shortText {
+	display: none;
+}
+.longText {
+	display: block;
+}
+
+@media (max-width:1350px) {
+.longText {
+	display: none;
+}
+.shortText {
+	display: block;
+}
+}
+
+@media (max-width:760px) {
+.acroText {
+	display: block;
+	font-size: 100px;
+}
+.shortText {
+	display: none;
+}
+}
