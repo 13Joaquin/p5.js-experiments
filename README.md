@@ -1,3 +1,8 @@
 # website
-Hi!
-I'm working on my website, and learning js, p5.js, and three.js along the way to ahve interesting sketches!
+Working on my website from scratch!
+Hopefully I can make something interesting visually which also is a nice introduction into myself.
+
+Ambitious, I know...
+
+joaquin giraldo-laguna
+2020
