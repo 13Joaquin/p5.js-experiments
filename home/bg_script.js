@@ -1,6 +1,11 @@
 var canvas;
 var elms = []
 
+var colors = [[186, 86, 36],
+              [140, 188, 185],
+              [221, 164, 72],
+              [141, 106, 159]]
+
 function setup() {
   canvas = createCanvas(0, 0);
   windowResized();
@@ -8,14 +13,16 @@ function setup() {
   canvas.style('z-index', '-1');
   // noLoop();
 
-  var projects = document.getElementById("project_container").getElementsByClassName("col-sm-4");
+  var projects = document.getElementById("project_container").getElementsByClassName("col-md-4");
   for (let i=0; i<projects.length; i++) {
     if (i == 'item') {continue;}
     console.log('index: ' + i);
     console.log(projects[i].getElementsByTagName("h3")[0].innerHTML);
 
-    elms.push(new highlightElement(projects[i]));
+    elms.push(new highlightElement(projects[i], colors[i], 5));
   }
+
+  elms.push(new highlightElement(document.getElementById("resume"), colors[projects.length], 20));
 }
 
 function draw() {
