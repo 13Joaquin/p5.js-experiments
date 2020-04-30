@@ -45,7 +45,7 @@ function DataPoint(idx) {
   }
 
   // print(attributes);
-  print(spomenik.title);
+  // print(spomenik.title);
 
   var coords = spomenik.coords;
   var spmkImg = spmkImgs[idx]
@@ -59,6 +59,10 @@ function DataPoint(idx) {
   var opac = new SoftNum(0);
 
   this.update = function() {
+
+    // update map locations (if window resized)
+    mapx = map(coords[1], rmap.longitude[0], rmap.longitude[1], rmap.left, rmap.right);
+    mapy = map(coords[0], rmap.latitude[0], rmap.latitude[1], rmap.bottom, rmap.top);
 
     // update all variables
     x.update();
