@@ -6,14 +6,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="home/styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <script src="libs/p5/p5.js"></script>
   <script src="libs/p5/SoftNum.js"></script>
   <script src="libs/p5/highlightElement.js"></script>
+  <script src="libs/p5/Utils.js"></script>
   <script src="home/bg_script.js"></script>
+  <style>
+    .embed-responsive-pdf {padding-bottom: 128%;}
+  </style>
 </head>
 
 <body>
@@ -21,11 +24,8 @@
     <a class="navbar-brand" href="#">joaquingl</a>
     <div class="collapse navbar-collapse order-last" id="navbarSupportedContent">
       <ul class="navbar-nav">
-        <!-- <li class="nav-item active">
-        <a class="nav-link" href="#">Active</a>
-      </li> -->
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="#">Experience</a>
+        <li class="nav-item">
+          <a class="nav-link" href="classes/4.032.html">Projects</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Research</a>
@@ -36,14 +36,11 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Contact</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li> -->
       </ul>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+      <span class="navbar-toggler-icon"></span>
+    </button>
   </nav>
 
   <!-- to space the jumbo from the navbar -->
@@ -65,7 +62,6 @@
     </div>
   </div>
 
-
   <div class="container" id="project_container">
     <div class="row">
       <div class="col-md-4 mb-4">
@@ -73,7 +69,10 @@
         <p class="font-italic">4.032: Design Studio: Information and Visualization</p>
         <p>For my third studio class, under the Architecture department at MIT, I'm developing my final project, based on a series of Yugoslavian post-WWII anti-fascist monuments. They are beautiful, abstract, painful monoliths telling the story
           under their earth. I am trying to show you these stories.</p>
-        <a href="spomenik.html" class="btn btn-primary" role="button">Explore with me</a>
+        <div class="btn-group" role="group">
+          <a href="classes/4.032/spomenik_first.html" class="btn btn-primary" role="button">First Draft</a>
+          <a href="classes/4.032/spomenik_final.html" class="btn btn-primary" role="button">Final Draft</a>
+        </div>
       </div>
       <div class="col-md-4">
         <h3>Motions of Volumetric Actuators</h3>
@@ -95,12 +94,6 @@
       <iframe src="home/giraldo_laguna_joaquin_resume.pdf"></iframe>
     </div>
   </div>
-
-  <!-- <script>
-    $(document).ready(function() {
-      $('[data-toggle="tooltip"]').tooltip();
-    });
-  </script> -->
 
 </body>
 

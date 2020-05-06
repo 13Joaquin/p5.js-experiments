@@ -7,10 +7,8 @@ var colors = [[186, 86, 36],
               [141, 106, 159]]
 
 function setup() {
-  canvas = createCanvas(0, 0);
+  var canvas = canvas = siteCanvas(z = 'bg', nav = false, scroll = 1);
   windowResized();
-  canvas.position(0, 0);
-  canvas.style('z-index', '-1');
   // noLoop();
 
   var projects = document.getElementById("project_container").getElementsByClassName("col-md-4");
@@ -35,11 +33,5 @@ function draw() {
 }
 
 function windowResized() {
-  let h;
-  if (windowHeight > document.body.scrollHeight) {h = windowHeight}
-  else {h = document.body.scrollHeight};
-  let w;
-  if (windowHeight > document.body.scrollWidth) {w = windowWidth}
-  else {w = document.body.scrollWidth};
-  resizeCanvas(w, h);
+  siteResized();
 }
