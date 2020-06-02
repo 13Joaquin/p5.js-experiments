@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>joaquingl</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="libs/p5/p5.js"></script>
+  <script src="libs/p5/SoftNum.js"></script>
+  <script src="libs/p5/highlightElement.js"></script>
+  <script src="libs/p5/Utils.js"></script>
+  <script src="home/bg_script.js"></script>
+  <style>
+    .embed-responsive-pdf {padding-bottom: 128%;}
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="index.html">joaquingl</a>
+    <div class="collapse navbar-collapse order-last" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <!-- to space the jumbo from the navbar -->
+  <div class="container py-4"></div>
+
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="home/joaquin_thumbs_300px.png" class="rounded-circle img-fluid" alt="joaquin in a happy state">
+        </div>
+        <div class="col-md-8">
+          <h1 class="display-3 mb-4">joaquin giraldo-laguna</h1>
+          <p class="font-italic">I'm a mechanical engineer / roboticist / designer fresh out of MIT<br>...and fresh into life</p>
+          <p class="">Below, you can find some current projects I'm working on.<br>You can also navigate previous projects I've done around the site! (soon)</p>
+          <div class="alert alert-warning">Site under construction! Be <abbr title="just kidding there's really nothing to be afraid of i'm just actively working on this site">wary...</abbr></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="project_container">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <h3>Stories from the Spomeniks</h3>
+        <p class="font-italic">4.032: Design Studio: Information and Visualization</p>
+        <p>For my third studio class, under the Architecture department at MIT, I'm developing my final project, based on a series of Yugoslavian post-WWII anti-fascist monuments. They are beautiful, abstract, painful monoliths telling the story
+          under their earth. I am trying to show you these stories.</p>
+        <div class="btn-group" role="group">
+          <a href="classes/4.032/spomenik_first.html" class="btn btn-primary" role="button">First Draft</a>
+          <a href="classes/4.032/spomenik_final.html" class="btn btn-primary" role="button">Final Draft</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h3>Motions of Volumetric Actuators</h3>
+        <p class="font-italic">6.832: Underactuated Robotics</p>
+        <p>For a <abbr title="Undergraduate Research Opportunity">UROP</abbr>, I was working on evaluating and designing new behaviors for a modular robot system made up of spherical volumetric actuators. Imagine a 2x4x1 system crawling like an
+          inchworm, or a 2x2x2 system rolling. I'm interested in seeing how these robots could potentially be represented in the Drake workspace to evaluate behaviors or perhaps discover new ones.</p>
+      </div>
+      <div class="col-md-4">
+        <h3>JOAQ-board</h3>
+        <p class="font-italic">2.S679: Electronics for Mechanical Systems II</p>
+        <p>I made my own PCB! Since classes were completely virtualized, I brought wires, electronics, and.... an entire soldering station back to my parents' home. I'm going to be doing some simple orientation sensor and LED matrix sketches with
+          it. I'm also diving into OpenCV and messing around with simple image tracking and recognition methods on a Raspberry Pi for this class. Cool stuff!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-3 mt-4" id="resume">
+    <div class="embed-responsive embed-responsive-pdf">
+      <iframe src="home/giraldo_laguna_joaquin_resume.pdf"></iframe>
+    </div>
+  </div>
+
+</body>
+
+</html>

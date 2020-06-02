@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>joaquingl - Motions of Modular Volumetric Actuators</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="../libs/p5/p5.js"></script>
+  <script src="../libs/p5/SoftNum.js"></script>
+  <script src="../libs/p5/highlightElement.js"></script>
+  <script src="../libs/p5/Utils.js"></script>
+  <!-- <script src="motions_of_modular_volumetric_actuators/spheres.js"></script> -->
+  <style>
+    .embed-responsive-pdf {padding-bottom: 128%;}
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="../index.html">joaquingl</a>
+    <div class="collapse navbar-collapse order-last" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="../classes.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Research</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Design</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <!-- to space the jumbo from the navbar -->
+  <div class="container py-4"></div>
+
+  <div class="container-fluid" style="background: #3e6ac2">
+    <div class="container py-3 my-3">
+      <div class="display-1 text-white">joaq_board</div>
+      <h1 class="text-white">2.S679 - Electronics for Mechanical Systems II</h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img class="img-fluid" src="motions_of_modular_volumetric_actuators/backforth.gif" alt="Box rolling back and forth">
+      </div>
+      <div class="col-md-8">
+        <p> In the spring of 2020, I developed a simulation for robotic systems I was working on in Drake.
+          It was the final project for a class at MIT, 6.832 Underactuated Robotics. Using the C++ API for Drake,
+          I simulated the robots and their modular configurations.In the image, for instance, you can see eight
+          spherical actuators in a cube formation, which expand and contract syncronously to roll over.
+        </p>
+        <!-- <p> <img src="../libs/Github_1.svg" style="height: 32px"> You can find the code for the  -->
+        <p> You can find the code for the simulation here:
+          <a href="https://github.com/joaquin-gl/drake" class="btn btn-outline-primary mx-3">Github</a>
+        </p>
+        <p> It was a challenging project, since modeling compliance for these systems is complex in Drake.
+          Still, I was able to create a framework to generate and control these actuators with the help of
+          some recently added features such as <code>LinearBushingRollPitchYaw</code> force elements.
+        </p>
+        <p> Below is the abstract for my final report, of which the full text is available here:
+          <a href="motions_of_modular_volumetric_actuators/motions_of_modular_volumetric_actuators_final_report.pdf" class="btn btn-outline-primary mx-3">Full text</a>
+        </p>
+      </div>
+    </div>
+    <p class="mx-5">In robotics, actuation via volume change has become popular and critical to many systems.
+      A spherical electromechanical actuator was developed in 2019 by the Distributed Robotics Laboratory in CSAIL.
+      These actuators are modular and can be linked to form structures and achieve certain dynamic behaviors.
+      Yet, forming large structures physically is difficult and expensive. In this paper, I introduce a framework
+      for generating structures from spherical volumetric actuators to simulate, and discuss how analysis of these
+      systems fosters educated decisions about which structures to generate, and how to control them.
+    </p>
+    <p class="blockquote-footer mx-4">Motions of Modular Volumetric Actuators, by me</p>
+  </div>
+
+  <div class="container">
+    <p>Finally, here is my video presentation for the project. Enjoy!</p>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=lanLBZutMbg"></iframe>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
